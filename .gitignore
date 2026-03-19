@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+env/
+
+# dotenv
+.env
+
+# IDEs
+.vscode/
+
+# Logs
+*.log
+
+# macOS
+.DS_Store
+
+# pythonbytecode
+*.pyc
