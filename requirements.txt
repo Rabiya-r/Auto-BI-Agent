@@ -68,3 +68,49 @@ Return this exact schema:
   "visualization_hint": "",
   "confidence": ""
 }
+
+
+------------------------
+Examples:
+
+User: sales by region
+Output:
+{
+  "metric": "total_sales",
+  "dimension": "region",
+  "time_filter": null,
+  "aggregation": "sum",
+  "comparison": null,
+  "top_n": null,
+  "sort_order": null,
+  "visualization_hint": "bar_chart",
+  "confidence": "high"
+}
+
+User: monthly sales trend for last year
+Output:
+{
+  "metric": "total_sales",
+  "dimension": "month",
+  "time_filter": "last_year",
+  "aggregation": "sum",
+  "comparison": null,
+  "top_n": null,
+  "sort_order": "ascending",
+  "visualization_hint": "line_chart",
+  "confidence": "high"
+}
+
+User: top 5 products by profit
+Output:
+{
+  "metric": "total_profit",
+  "dimension": "product_name",
+  "time_filter": null,
+  "aggregation": "sum",
+  "comparison": null,
+  "top_n": 5,
+  "sort_order": "descending",
+  "visualization_hint": "bar_chart",
+  "confidence": "high"
+}
